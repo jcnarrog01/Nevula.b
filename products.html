@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Nevula launch drop and calculate your tickets toward the New York giveaway.">
+  <title>Nevula Drop | New York Launch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="page-products">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Nevula home">
+          <img class="brand-logo" src="imgs/logo_main_dark.png" alt="Nevula logo">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav-menu>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link is-active" href="products.html">Drop</a>
+          <a class="nav-link" href="countdown.html">New York</a>
+          <a class="nav-link nav-link--button" href="#drop-editorial">Shop the Drop</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--drop">
+        <div class="page-hero__ambient page-hero__ambient--one"></div>
+        <div class="page-hero__ambient page-hero__ambient--two"></div>
+        <div class="container page-hero__inner">
+          <div class="page-hero__copy" data-reveal>
+            <p class="eyebrow eyebrow--light">Curated Drop / New York Launch</p>
+            <h1>Two tees. One city. A ticket value built into every order.</h1>
+            <p class="hero-text hero-text--light">
+              The opening Nevula drop is focused on oversized essentials, premium graphics, and a direct path into
+              the New York giveaway.
+            </p>
+          </div>
+          <div class="page-hero__stat" data-reveal>
+            <span class="page-hero__label">Entry Rule</span>
+            <strong>$1 spent = 1 ticket</strong>
+            <p>Each tee is priced at $45 and earns 45 entries.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee marquee--dark" aria-label="Drop messaging">
+        <div class="marquee__track">
+          <span>Curated drop</span>
+          <span>Black City Tee</span>
+          <span>White Liberty Tee</span>
+          <span>45 tickets each</span>
+          <span>Curated drop</span>
+          <span>Black City Tee</span>
+          <span>White Liberty Tee</span>
+          <span>45 tickets each</span>
+        </div>
+      </section>
+
+      <section class="section section--light">
+        <div class="container drop-layout">
+          <aside class="ticket-desk" data-reveal>
+            <p class="eyebrow">Ticket Balance</p>
+            <h2>Your running total</h2>
+            <div class="ticket-desk__row">
+              <span>Items</span>
+              <strong data-cart-count>0</strong>
+            </div>
+            <div class="ticket-desk__row">
+              <span>Total</span>
+              <strong data-cart-total>$0</strong>
+            </div>
+            <div class="ticket-desk__row">
+              <span>Tickets</span>
+              <strong data-ticket-total>0</strong>
+            </div>
+            <div class="ticket-desk__focus">
+              <span>Last added</span>
+              <strong data-last-item>No items yet</strong>
+            </div>
+            <button class="button button--ghost button--block" type="button" data-clear-cart>Reset Selection</button>
+            <a class="button button--primary button--block" href="countdown.html">Go to New York countdown</a>
+          </aside>
+
+          <div class="drop-editorial" id="drop-editorial">
+            <article class="product-feature product-feature--dark" data-product-card data-name="Black City Tee" data-price="45" data-tickets="45" data-reveal>
+              <div class="product-feature__meta">
+                <p class="product-feature__index">01 / Black City Tee</p>
+                <h2>Urban calm with a cinematic graphic turn.</h2>
+                <p>
+                  A deep black oversized silhouette with a minimal front and a city-scene back print that feels
+                  fashion-led rather than loud.
+                </p>
+                <div class="product-feature__details">
+                  <span>$45</span>
+                  <span>45 tickets</span>
+                  <span>Oversized fit</span>
+                </div>
+                <label class="select-label" for="size-black-city">Size</label>
+                <select id="size-black-city" class="size-select" data-size-select>
+                  <option value="S">Small</option>
+                  <option value="M" selected>Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">XL</option>
+                </select>
+                <div class="product-feature__actions">
+                  <button class="button button--primary" type="button" data-add-to-cart>Add to Cart</button>
+                  <p class="product-status" data-product-status aria-live="polite">Select a size and add this piece to your ticket balance.</p>
+                </div>
+              </div>
+              <div class="product-feature__media" data-parallax="12">
+                <img src="imgs/black_city_tee.png" alt="Black City Tee">
+              </div>
+            </article>
+
+            <article class="product-feature product-feature--light" data-product-card data-name="White Liberty Tee" data-price="45" data-tickets="45" data-reveal>
+              <div class="product-feature__media" data-parallax="12">
+                <img src="imgs/white_liberty_tee.png" alt="White Liberty Tee">
+              </div>
+              <div class="product-feature__meta">
+                <p class="product-feature__index">02 / White Liberty Tee</p>
+                <h2>Clean white base with skyline color and Liberty focus.</h2>
+                <p>
+                  This piece shifts the energy brighter while keeping the same premium proportion, bold back graphic,
+                  and direct tie to New York.
+                </p>
+                <div class="product-feature__details">
+                  <span>$45</span>
+                  <span>45 tickets</span>
+                  <span>Destination print</span>
+                </div>
+                <label class="select-label" for="size-white-liberty">Size</label>
+                <select id="size-white-liberty" class="size-select" data-size-select>
+                  <option value="S">Small</option>
+                  <option value="M" selected>Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">XL</option>
+                </select>
+                <div class="product-feature__actions">
+                  <button class="button button--primary" type="button" data-add-to-cart>Add to Cart</button>
+                  <p class="product-status" data-product-status aria-live="polite">Select a size and add this piece to your ticket balance.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <img class="footer-logo" src="imgs/logo_main_dark.png" alt="Nevula logo">
+          <p>Wear the journey. Win the destination.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Drop</a>
+          <a href="countdown.html">New York</a>
+          <a href="products.html#drop-editorial">Shop the Drop</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
